@@ -9,8 +9,9 @@ from utils import resize_image_for_display
 import streamlit as st
 import os
 
-from dotenv import load_dotenv
-load_dotenv()
+os.environ['TAVILY_API_KEY'] = st.secrets['TAVILY_API_KEY']
+os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
+
 
 @st.cache_resource
 def get_agent():
