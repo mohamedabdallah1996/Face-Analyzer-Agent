@@ -1,0 +1,5 @@
+google-generativeai==0.8.5
+tavily-python==0.6.0
+phidata==2.7.10
+streamlit==1.44.1
+python-dotenv==1.1.0
